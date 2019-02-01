@@ -13,7 +13,22 @@
   footer{
     background-image: url("image.jpg");
   }
-  
+  #check{
+    width:20%;
+    height: auto;
+    transition-property: width; 
+    transition-duration: 1s;
+  }
+
+  #check:checked {
+    background-image: url("image.jpg");
+  }
+
+  #check:hover{
+    width:100%;
+  }
+ 
+
   h6 {
     text-align: center;
     padding: 1.5rem 2.5rem;
