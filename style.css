@@ -10,7 +10,9 @@
   body{
 	background-image: linear-gradient(120deg, #e4e1ec 0%, #051072 100%);
   }
-
+  footer{
+    background-image: url("image.jpg");
+  }
   
   h6 {
     text-align: center;
@@ -22,7 +24,6 @@
   img {
     display: block;
     max-width: 1000 px;
-    border-radius: 15px 15px 0px 0px;
     margin-bottom: 3px; 
  
   }
