@@ -1,6 +1,6 @@
 <?php
  
-   class savedata{
+   class saveemployee{
 
         function registredEmployee(){
             include("connectdb.php");
@@ -18,22 +18,12 @@
             echo "Success";
         }
 
-        function registredcheck($IDcheck,$routing,$accounttransmit){
+       
+        function registredcheck(){
             include("connectdb.php");
             $db= new connectbd();
-            $db=$db->conndb();
-            $req=$db->prepare('INSERT INTO checktable(IDcheck,routing,accounttransmit,datedeposit) VALUES (:IDcheck,:routing,:accounttransmit,NOW())');
-            $req->execute(array(
-                'IDcheck'=>$IDcheck,
-                'routing'=>$routing,
-                'accounttransmit'=>$accounttransmit
-            ));
-            echo "Success";
-        }
-
-        function afficher(){
-            echo "hdjdhdjd";
+            echo "Hello";
         }
 }  
-     //$data=new savedata();
-     //$data->registredEmployee();
+     $data=new saveemployee();
+    $data->registredcheck();

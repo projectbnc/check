@@ -9,11 +9,11 @@
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="row">
-            <div class="col-md-12">
-                <img src="image.jpg">
-            </div>
-        </div>
+    <header class="row">
+        <div class="container">
+            <img src="images.jpg" style="width:10%;padding:10px;">
+      </div>
+    </header>
     <div class="container">
         <div class="row">
             <div class="col-md-8">
@@ -37,13 +37,17 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <form action="savedata.php" action="post">
-                                        <td> 12345678 </td>
-                                        <td>12345678</td>
-                                        <td>12345678</td>
-                                        <td>
-                                            <input type="text" class="form-control">
+                            <?php
+                              include ("clear.php");
+                              for($i=0;$i<$temp;$i++){
+                           echo '
+                                <form action="savecheck.php" method="post">
+                                 <tr>
+                                    <td>'. $routing[$i] .'</td>
+                                    <td>'. $accountnumber[$i]. '</td>
+                                    <td>'. $numcheck[$i]. '</td>
+                                    <td>
+                                            <input type="text" class="form-control" name="routing" value="'.$routing[$i].'">
                                         </td>
                                         <td>
                                             <input type="text" class="form-control">
@@ -51,108 +55,16 @@
                                         <td>
                                             <button type="submit" class="btn btn-secondary">Save</button>
                                         </td>
-                                    </form>
                                 </tr>
-                                <tr>
-                                    <td> 12345678 </td>
-                                    <td>12345678</td>
-                                    <td>12345678</td>
-                                    <td>
-                                        <input type="text" class="form-control">
-                                    </td>
-                                    <td>
-                                        <input type="text" class="form-control">
-                                    </td>
-                                    <td>
-                                        <button type="submit" class="btn btn-secondary">Save</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td> 12345678 </td>
-                                    <td>12345678</td>
-                                    <td>12345678</td>
-                                    <td>
-                                        <input type="text" class="form-control">
-                                    </td>
-                                    <td>
-                                        <input type="text" class="form-control">
-                                    </td>
-                                    <td>
-                                        <button type="submit" class="btn btn-secondary">Save</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                <td> 12345678 </td>
-                                    <td>12345678</td>
-                                    <td>12345678</td>
-                                    <td>
-                                        <input type="text" class="form-control">
-                                    </td>
-                                    <td>
-                                        <input type="text" class="form-control">
-                                    </td>
-                                    <td>
-                                    <button type="submit" class="btn btn-secondary">Save</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                <td> 12345678 </td>
-                                    <td>12345678</td>
-                                    <td>12345678</td>
-                                    <td>
-                                        <input type="text" class="form-control">
-                                    </td>
-                                    <td>
-                                        <input type="text" class="form-control">
-                                    </td>
-                                    <td>
-                                    <button type="submit" class="btn btn-secondary">Save</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                <td> 12345678 </td>
-                                    <td>12345678</td>
-                                    <td>12345678</td>
-                                    <td>
-                                        <input type="text" class="form-control">
-                                    </td>
-                                    <td>
-                                        <input type="text" class="form-control">
-                                    </td>
-                                    <td>
-                                    <button type="submit" class="btn btn-secondary">Save</button>
-                                    </td>
-                                </tr>
-                                <td> 12345678 </td>
-                                    <td>12345678</td>
-                                    <td>12345678</td>
-                                    <td>
-                                        <input type="text" class="form-control">
-                                    </td>
-                                    <td>
-                                        <input type="text" class="form-control">
-                                    </td>
-                                    <td>
-                                    <button type="submit" class="btn btn-secondary">Save</button>
-                                    </td>
-                                </tr>
-                                <td> 12345678 </td>
-                                    <td>12345678</td>
-                                    <td>12345678</td>
-                                    <td>
-                                        <input type="text" class="form-control">
-                                    </td>
-                                    <td>
-                                        <input type="text" class="form-control">
-                                    </td>
-                                    <td>
-                                    <button type="submit" class="btn btn-secondary">Save</button>
-                                    </td>
-                                </tr>
+                                </form>';
+                              }
+                            ?>
                             </tbody>
                         </table>
-                        <div class="row">
-                            <button class="btn btn-primary" type="button">OK </button>
+                        <div class="row" >
+                            <div class="col-md-2" style="margin-left:28rem;margin-bottom:3rem;">
+                                <button class="btn btn-primary" type="button">OK </button>
+                            </div>
                         </div>
                     </div>
                 </div> 
@@ -160,11 +72,10 @@
         </div> 
     </div>
     <footer class="row">
-        <div class="col-md-6">
-            BNC, Banque National de Credit  n
-        </div>
-        <div class="col-md-6">
-            BNC, Banque National de Credit  n
+        <div class="container">
+            <div class="col-md-8" >
+            BNC 2019, l'Experience au Service de toutes les Generations
+            </div>
         </div>
     </footer>
 </body>

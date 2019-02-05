@@ -11,21 +11,29 @@
 	background-image: linear-gradient(120deg, #e4e1ec 0%, #051072 100%);
   }
   footer{
-    background-image: url("image.jpg");
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    height: 3rem;
+    background-color: aliceblue;
+    padding: 10px;
   }
   #check{
+    
     width:20%;
     height: auto;
     transition-property: width; 
     transition-duration: 1s;
   }
 
-  #check:checked {
-    background-image: url("image.jpg");
-  }
 
   #check:hover{
     width:100%;
+  }
+  
+  header{
+    background-image: url("image.jpg");
   }
  
 

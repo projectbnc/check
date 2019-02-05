@@ -17,38 +17,38 @@
              <div class="card" style="width: 29rem;">
                 <img src="logo.jpg">
                     <div class="card-title">
-                        <h6>Enregistrer un nouveau utilisateur</h6>
+                        <h6>Ajouter</h6>
                     </div>
                     <div class="container">
-             	        <form class="form-horizontal col-md-12" action="savedata.php" method="post">
+             	        <form class="form-horizontal col-md-12" action="savecheck.php" method="post">
                             <div class="form-group row">
-                                <label for="NumeroCompte" class="col-md-6">Nom</label>
+                                <label for="NumeroCompte" class="col-md-6">Numero cheque</label>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" name="Lastname">
+                                    <input type="text" class="form-control" name="IDcheck">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="Montant" class="col-sm-6 col-form-label">Prenom</label>
+                                <label for="Montant" class="col-sm-6 col-form-label">Routing checque</label>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" name="FirstName">
+                                    <input type="text" class="form-control" name="routing">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="NumeroCompte" class="col-md-6">Pseudo</label>
+                                <label for="NumeroCompte" class="col-md-6">Compte de initial</label>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" name="Username">
+                                    <input type="text" class="form-control" name="accounttransmit">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="Montant" class="col-sm-6 col-form-label">Password</label>
+                                <label for="Montant" class="col-sm-6 col-form-label">compte de depot</label>
                                 <div class="col-md-6">
-                                  <input type="password" class="form-control" name="password">
+                                  <input type="text" class="form-control" name="accountdeposit">
                                 </div>
                               </div>
                               <div class="form-group row">
-                                    <label for="Montant" class="col-sm-6 col-form-label">Departement</label>
+                                    <label for="Montant" class="col-sm-6 col-form-label">Montant</label>
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" name="status">
+                                        <input type="text" class="form-control" name='amount'>
                                     </div>
                                 </div>
                                 <div class="form-group row">

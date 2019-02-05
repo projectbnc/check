@@ -1,6 +1,5 @@
 <?php
     class connectbd{
-        private $db;
 
         function conndb(){
         try{
