@@ -7,9 +7,7 @@
     color: #666;
   }
   
-  body{
-	background-image: linear-gradient(120deg, #e4e1ec 0%, #051072 100%);
-  }
+  
 
   
   h6 {
@@ -37,7 +35,7 @@
     font-size: 12px;
   }
   
-  .card {
+  header {
     background: white;
     box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
     overflow: hidden;
@@ -46,7 +44,7 @@
   
   }
   
-  .card:hover {
+  head:hover {
     box-shadow: 2px 8px 45px rgba(13, 4, 34, 0.9);
     transform: translate3D(0, -2px, 0);
   }
@@ -57,25 +55,25 @@
   }
   
   @media screen and (min-width: 600px) {
-    .card {
+    .header {
       flex: 1 1 calc(50% - 2rem);
     }
   }
   
   @media screen and (min-width: 900px) {
-    .card {
+    header {
       flex: 1 1 calc(33% - 2rem);
     }
   }
   
-  .card:nth-child(2n) h6 {
+  header:nth-child(2n) h6 {
     background-image: linear-gradient(120deg, #e4e1ec 0%, #051072 100%);
   }
   
-  .card:nth-child(4n) h6 {
+  header:nth-child(4n) h6 {
     background-image: linear-gradient(120deg, #e4e1ec 0%, #051072 100%);
   }
   
-  .card:nth-child(5n) h6 {
+  header:nth-child(5n) h6 {
     background-image: linear-gradient(120deg, #e4e1ec 0%, #051072 100%);
   }
