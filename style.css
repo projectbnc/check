@@ -7,7 +7,9 @@
     color: #666;
   }
   
-  
+  .elem{
+    margin:20px;
+  }
 
   
   h6 {
@@ -44,15 +46,11 @@
   
   }
   
-  head:hover {
+  .card:hover {
     box-shadow: 2px 8px 45px rgba(13, 4, 34, 0.9);
     transform: translate3D(0, -2px, 0);
   }
 
-  .img:hover {
-   
-    transform: translate3D(0, -2px, 0);
-  }
   
   @media screen and (min-width: 600px) {
     .header {
