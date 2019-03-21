@@ -11,7 +11,9 @@
     margin:20px;
     background-color: white;
   }
-
+  .img{
+    border-radius: 0%;
+  }
   footer{
 
     left:0;
