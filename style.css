@@ -9,9 +9,22 @@
   
   .elem{
     margin:20px;
+    background-color: white;
   }
 
-  
+  footer{
+
+    left:0;
+    right:0;
+    bottom:0;
+    height: 3rem;
+    background-color: aliceblue;
+    padding: 10px;
+  }
+  #color{
+    background-color: rgb(176, 191, 223);
+  }
+
   h6 {
     text-align: center;
     padding: 1.5rem 2.5rem;
