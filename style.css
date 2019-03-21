@@ -15,19 +15,25 @@
     border-radius: 0%;
   }
   footer{
-
+    color: rgb(33, 17, 83);
     left:0;
     right:0;
     bottom:0;
-    height: 3rem;
-    background-color: aliceblue;
-    padding: 10px;
+    height: 15rem;
+    font-style: unset;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(143, 154, 216);
+    padding: 40px;
   }
   #color{
     background-color: rgb(176, 191, 223);
   }
 
-  h6 {
+  #row{
+    padding: 1rem;
+    background-color: rgb(157, 188, 216);
+  }
+  h1 {
     text-align: center;
     padding: 1.5rem 2.5rem;
     background-image: linear-gradient(120deg,#e4e1ec 0%, #051072  100%);
