@@ -6,10 +6,15 @@
     line-height: 1.6;
     color: #666;
   }
-  
+  .item{
+    font-size: 25px;
+    padding: 1rem 0rem 2rem 4rem;
+    color: blue;
+    font-weight: bold;
+  }
   .elem{
     margin:20px;
-    background-color: white;
+    background-color: rgb(248,247,245);
   }
   .img{
     border-radius: 0%;
@@ -28,14 +33,15 @@
   #color{
     background-color: rgb(176, 191, 223);
   }
-
+  
   #row{
     padding: 1rem;
     background-color: rgb(157, 188, 216);
   }
-  h1 {
+ 
+  h6 {
     text-align: center;
-    padding: 1.5rem 2.5rem;
+    padding:  3px ;
     background-image: linear-gradient(120deg,#e4e1ec 0%, #051072  100%);
     color: white;
   }
@@ -95,4 +101,8 @@
   
   header:nth-child(5n) h6 {
     background-image: linear-gradient(120deg, #e4e1ec 0%, #051072 100%);
+  }
+  body{
+    background-image: linear-gradient(120deg,#e4e1ec 0%, #8e96d8  90%);
+    
   }
