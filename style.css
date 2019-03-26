@@ -42,7 +42,8 @@
   }
   
   #row{
-    padding: 1rem;
+    padding: 15px 0px 15px 50px;
+  
     background-color: rgb(157, 188, 216);
     font-family: initial;
   }
