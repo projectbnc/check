@@ -43,14 +43,19 @@
   
   #row{
     padding: 15px 0px 15px 50px;
-  
     background-color: rgb(157, 188, 216);
     font-family: initial;
   }
- 
+ .price{
+  padding:  5px 0px 10px 50px ;
+  color:blue;
+  font-weight: bold;
+  font-size: 18px;
+  
+ }
   h6 {
     text-align: center;
-    padding:  3px ;
+    padding:  5px ;
     background-image: linear-gradient(120deg,#e4e1ec 0%, #051072  100%);
     color: white;
   }
