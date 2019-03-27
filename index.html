@@ -34,7 +34,7 @@
               Nos activites
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Produits</a>
+              <a class="dropdown-item" href="index.html">Produits</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Services</a>
               
@@ -52,6 +52,7 @@
         </form>
       </div>
     </nav>
+  
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel"> 
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -67,6 +68,7 @@
         </div>
       </div>
     </div>
+    <div id="progressBar" class="progress_bar"></div>
                   <div class="container-fluid" style="margin:10px" >
                       <div class="col-md-12" >  
                      <div class="row elem">
@@ -149,7 +151,7 @@
               <div class="col-md-4">
                   <h4 style="color:white">Suivez-Nous</h4>
                   <div class="foot">
-                  Twiter <i class="fa fa-twitter" aria-hidden="true"></i><br>
+                  <a href="https://twitter.com/coftech2"> Twiter <i class="fa fa-twitter" aria-hidden="true"></i><br></a>
                  <a href="https://www.facebook.com/Coftech-2271575219735129/">Facebook <i class="fa fa-facebook-square" aria-hidden="true"></i><br></a>
                  <a href="https://www.instagram.com/?hl=fr Instagram">Instagram<i class="fa fa-instagram" aria-hidden="true"></i><br></a>
                   LinkedIn <i class="fa fa-linkedin" aria-hidden="true"></i><br>
@@ -173,4 +175,17 @@
        </div> 
     </div>
 </body>
+<script>
+  // Assign your element ID to a variable.
+  var progress = document.getElementById("progressBar");
+  // Pause the animation for 100 so we can animate from 0 to x%
+  setTimeout(
+    function(){
+      progress.style.width = "100%";
+      // PHP Version:
+      // progress.style.width = "<?php echo $progressPercentage; ?>";
+      progress.style.backgroundColor = "rgb(57, 109, 221)";
+    }
+  ,100);
+</script>
 </html>

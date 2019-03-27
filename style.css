@@ -40,7 +40,18 @@
   #color{
     background-color: rgb(176, 191, 223);
   }
-  
+  .progress_bar {
+    height: 10px;
+    background: rgb(141, 142, 216);
+    width: 0%;
+    -moz-transition: all 4s ease;
+    -moz-transition-delay: 1s;
+    -webkit-transition: all 4s ease;
+    -webkit-transition-delay: 1s;
+    transition: all 4s ease;
+    transition-delay: 1s;
+  }
+
   #row{
     padding: 15px 0px 15px 50px;
     background-color: rgb(157, 188, 216);
