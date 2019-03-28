@@ -42,7 +42,7 @@
   }
   .progress_bar {
     height: 10px;
-    background: rgb(141, 142, 216);
+    background: white;
     width: 0%;
     -moz-transition: all 4s ease;
     -moz-transition-delay: 1s;
